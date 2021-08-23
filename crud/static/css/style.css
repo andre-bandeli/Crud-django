@@ -1,0 +1,21 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+#slider .container {
+    margin-top: 250px;
+    width: 800px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    background-color: blue;
+}
