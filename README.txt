@@ -5,14 +5,14 @@ web com python/django.
 
 ## TASKS ## 
 
-# criar venv/ativar
-# startar proojeto django
-# criar app page
-# criar app users (utilizando a biblioteca padrão de users do django)
-# gerenciar urls 
+# criar venv/ativar - ok
+# startar proojeto django - ok 
+# criar app page - ok 
+# criar app users (utilizando a biblioteca padrão de users do django) - ok 
+# gerenciar urls - ok
 # criar pastas template/static e modificar o settings para redirecionamento e localização dos arquivos
-estaticos
-# views pages 
+estaticos - ok
+# views pages - ok
 # views users (login/logout)
 
 
