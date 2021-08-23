@@ -17,4 +17,24 @@ def ListTasks(request):
         form = TaskForm(request.POST)
         if form.is_valid():
             user = form.save()
-            return render(request, 'home.html')
+            return render(request, 'index.html')
+
+def create(request):
+    form = TaskForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        return redirect('home')
+
+def edit(request, pk):
+    data = {}
+    data['db'] = Task.objects.get(pk=pk)
+    data['form'] = TaskForm(instance=data['db'])
+    return render(request, 'form.html', data)
+
+def update(request, pk):
+    data = {}
+    data['db'] = Task.objects.get(pk=pk)
+    form = TaskForm(request.POST or None, instance=data['db'])
+    if form.is_valid():
+        form.save()
+        return redirect('/home')

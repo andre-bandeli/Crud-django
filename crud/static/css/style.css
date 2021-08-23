@@ -74,3 +74,25 @@ body {
 	margin-top: 5px;
 	margin-left: 30px;
 }
+#section_1 .container-fluid {
+    margin-top: 20px;
+}
+#section_1 .container-fluid .btn-outline-dark {
+    width: 100px;
+    height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    margin-left: 50px;
+
+}
+#tabela {
+    align-items: center;
+    position: absolute;
+    width: 100%;
+
+}
+
+#tabela .container {
+    margin-left: 50px;
+    margin-top: 20px;
+}
