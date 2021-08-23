@@ -7,7 +7,7 @@ def home(request):
     data['db'] = Task.objects.all()
     return (render(request, 'home.html', data))
 
-def ListTasks(request):
+def form(request):
     if request.method == "GET":
         return render(
             request, "form.html",
@@ -17,13 +17,13 @@ def ListTasks(request):
         form = TaskForm(request.POST)
         if form.is_valid():
             user = form.save()
-            return render(request, 'index.html')
+            return render(request, 'home.html')
 
 def create(request):
     form = TaskForm(request.POST or None)
     if form.is_valid():
         form.save()
-        return redirect('home')
+        return redirect('/lista')
 
 def edit(request, pk):
     data = {}
@@ -37,4 +37,9 @@ def update(request, pk):
     form = TaskForm(request.POST or None, instance=data['db'])
     if form.is_valid():
         form.save()
-        return redirect('/home')
+        return redirect('/lista')
+
+def delete(request, pk):
+    db = Task.objects.get(pk=pk)
+    db.delete()
+    return redirect('/lista')
