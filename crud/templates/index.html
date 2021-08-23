@@ -1,29 +1,50 @@
-<!doctype html>
 {% load static %}
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <title>CRUD/<title>
-  </head>
 
+    <title>Hello, world!</title>
+  </head>
   <body>
 
     <div id="slider">
         <div class="container">
+            <div class="container-fluid">
+                <h2>Esta é uma CRUD simples desenvolvida em python/django para fins de estudo. 
+                    Nela estão inseridos os sistemas de autenticação (login/logout/reset) padrão do django e,
+                    após autenticação, é gerada uma página onde é possível criar/editar tarefas diárias.
+                </h2>
+                <script>
+                    function maqEscr(elemento){
+                        const text = elemento.innerHTML.split('');
+                        elemento.innerHTML = ' ';
+                        text.forEach(function(k, j){   
+                        
+                        setTimeout(function(){
+                            elemento.innerHTML += k;
+                        }, j * 75)
+
+                    });
+                    }
+                    const texto = document.querySelector('h2');
+                    maqEscr(texto);
+                </script>
+            </div>
 
         </div>
-
     </div>
-
-
-
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
   </body>
