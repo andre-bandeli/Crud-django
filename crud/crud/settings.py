@@ -19,6 +19,7 @@ INSTALLED_APPS = [
     ## my apps ##
     'users',
     'pages',
+    'tasks',
 ]
 
 MIDDLEWARE = [
