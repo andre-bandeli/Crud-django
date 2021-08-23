@@ -96,3 +96,10 @@ body {
     margin-left: 50px;
     margin-top: 20px;
 }
+
+.btn-outline-success {
+    height: 30px;
+    width: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+}
