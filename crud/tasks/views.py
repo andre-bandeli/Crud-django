@@ -24,6 +24,7 @@ def create(request):
     if form.is_valid():
         form.save()
         return redirect('/lista')
+    return render(request, 'form.html', {'form': form})
 
 def edit(request, pk):
     data = {}

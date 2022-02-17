@@ -1,17 +1,12 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
 {% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <title>TASK FORM</title>
-</head>
-<body>
+
+
+
+{% block content %}
     
     <section id="header">
-        <h1>Olá, esta é nossa pagina de formulario</h1>
+        <h1>Adicionar nova tarefa</h1>
         <form  id="form" action="{% if db %}/update/{{db.id}}/{%else%}/create/{% endif %}" method="post">
             {% csrf_token %}
             {{form.as_p}}
@@ -20,5 +15,5 @@
         <a href="/home">return to home page</a>
     </section>
 
-</body>
-</html>
+
+{% endblock %}

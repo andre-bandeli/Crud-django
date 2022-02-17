@@ -90,5 +90,5 @@ STATIC_URL = "/static/"
 STATICFILES_DIRS = ["static"]
 STATIC_ROOT = "staticfiles"
 ## redirect
-LOGIN_REDIRECT_URL = '/home'
+LOGIN_REDIRECT_URL = '/lista'
 LOGOUT_REDIRECT_URL = '/'
