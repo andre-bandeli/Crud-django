@@ -1,7 +1,10 @@
 from django.shortcuts import redirect, render
+from django.contrib.auth.decorators import login_required
 from .forms import TaskForm
 from .models import Task
 
+
+@login_required(login_url='/lista') 
 def home(request):
     data = {}
     data['db'] = Task.objects.all()

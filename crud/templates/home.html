@@ -3,7 +3,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
-
+{% block title %}<title>Lista de Tarefas</title>{% endblock %}
 
 {% block content %}
 
@@ -32,7 +32,6 @@
               <td>{{dbs.data}}</td>
               <td>{{dbs.active}}</td>
               <td>
-                  <a href="/view/{{dbs.id}}/" class="btn btn-dark">Visualizar</a>
                   <a href="/edit/{{dbs.id}}/" class="btn btn btn-outline-success">Editar</a>
                   <a href="/delete/{{dbs.id}}/" class="btn btn-danger btnDel">Deletar</a>
               </td>

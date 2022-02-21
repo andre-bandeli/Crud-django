@@ -2,7 +2,7 @@
 {% load static %}
 
 
-
+{% block title %}<title>Tarefa</title>{% endblock %}
 {% block content %}
     
     <section id="header">
@@ -12,7 +12,7 @@
             {{form.as_p}}
             <input type="submit" value="CRIAR NOVA TASK">
         </form>
-        <a href="/home">return to home page</a>
+        <a href="/lista">return to home page</a>
     </section>
 
 
