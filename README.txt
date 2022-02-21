@@ -1,18 +1,25 @@
-Primeiras configs para o projeto de uma crud simples (registro de atividades, 
-login, logout, delete, update) para fins de estudo pessoal no desenvolvimento
-web com python/django. 
+## React one-page desenvolvida com Python e Django
+
+ ![Badge](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)
+
+Este é um projeto desenvolvido utilizando React e Javascript.
+Para ver online: https://andre-bandeli.github.io/React-Template/
 
 
-## TASKS ## 
+### Para rodar o projeto:
 
-# criar venv/ativar - ok
-# startar proojeto django - ok 
-# criar app page - ok 
-# criar app users (utilizando a biblioteca padrão de users do django) - ok 
-# gerenciar urls - ok
-# criar pastas template/static e modificar o settings para redirecionamento e localização dos arquivos
-estaticos - ok
-# views pages - ok
-# views users (login/logout)
+**Note: instale as dependências necessárias!**
+
+- Clone o repositório em sua máquina local
+- Navegue até a pagina main
+- rode o comando: npm run
+
+#### Dependências necessárias
+ 
+- npm i react-elastic-carousel
+- npm i sass
 
 
+#### Deploy da aplicação
+
+Para realizar o deploy do projeto, rode o comando: npm run build
