@@ -1,4 +1,4 @@
-## React one-page desenvolvida com Python e Django
+## CRUD ToDo List desenvolvida com Python e Django
 
 ![Badge](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)
 
